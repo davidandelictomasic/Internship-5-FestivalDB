@@ -64,3 +64,44 @@ CREATE TABLE stavka_narudzbe (
     kolicina INT NOT NULL,
     cijena_po_komadu NUMERIC(10,2) NOT NULL
 );
+CREATE TABLE mentor (
+    mentor_id SERIAL PRIMARY KEY,
+    ime VARCHAR(100) NOT NULL,
+    prezime VARCHAR(100) NOT NULL,
+    godina_rodenja INT NOT NULL,
+    podrucje_strucnosti VARCHAR(100),
+    godine_iskustva INT NOT NULL
+);
+CREATE TABLE radionica (
+    radionica_id SERIAL PRIMARY KEY,
+    festival_id INT NOT NULL REFERENCES festival(festival_id),
+    mentor_id INT NOT NULL REFERENCES mentor(mentor_id),
+    naziv VARCHAR(100) NOT NULL,
+    razina_tezine VARCHAR(20) NOT NULL,
+    max_polaznika INT NOT NULL,
+    trajanje_sati INT NOT NULL,
+    zahtijeva_prethodno_znanje BOOLEAN DEFAULT FALSE
+);
+CREATE TABLE prijava_radionica (
+    prijava_id SERIAL PRIMARY KEY,
+    radionica_id INT NOT NULL REFERENCES radionica(radionica_id),
+    posjetitelj_id INT NOT NULL REFERENCES posjetitelj(posjetitelj_id),
+    status VARCHAR(20) NOT NULL,
+    vrijeme_prijave TIMESTAMP NOT NULL
+);
+CREATE TABLE osoblje (
+    osoblje_id SERIAL PRIMARY KEY,
+    festival_id INT NOT NULL REFERENCES festival(festival_id),
+    ime VARCHAR(100) NOT NULL,
+    prezime VARCHAR(100) NOT NULL,
+    datum_rodenja DATE NOT NULL,
+    uloga VARCHAR(50) NOT NULL,
+    kontakt VARCHAR(150),
+    ima_sigurnosnu_obuku BOOLEAN DEFAULT FALSE
+);
+CREATE TABLE membership_kartica (
+    membership_id SERIAL PRIMARY KEY,
+    posjetitelj_id INT NOT NULL REFERENCES posjetitelj(posjetitelj_id),
+    datum_aktivacije DATE NOT NULL,
+    status VARCHAR(20) NOT NULL
+);
