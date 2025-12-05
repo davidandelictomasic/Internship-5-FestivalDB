@@ -34,3 +34,33 @@ CREATE TABLE nastup (
     vrijeme_zavrsetka TIMESTAMP NOT NULL,
     ocekivani_broj_posjetitelja INT
 );
+CREATE TABLE posjetitelj (
+    posjetitelj_id SERIAL PRIMARY KEY,
+    ime VARCHAR(100) NOT NULL,
+    prezime VARCHAR(100) NOT NULL,
+    datum_rodenja DATE NOT NULL,
+    grad VARCHAR(100),
+    email VARCHAR(150),
+    drzava VARCHAR(100)
+);
+CREATE TABLE ulaznica (
+    ulaznica_id SERIAL PRIMARY KEY,
+    tip VARCHAR(50) NOT NULL,
+    cijena NUMERIC(10,2) NOT NULL,
+    opis TEXT,
+    vrijedi_za VARCHAR(50)
+);
+CREATE TABLE narudzba (
+    narudzba_id SERIAL PRIMARY KEY,
+    posjetitelj_id INT NOT NULL REFERENCES posjetitelj(posjetitelj_id),
+    festival_id INT NOT NULL REFERENCES festival(festival_id),
+    datum_vrijeme_kupnje TIMESTAMP NOT NULL,
+    ukupan_iznos NUMERIC(10,2) NOT NULL
+);
+CREATE TABLE stavka_narudzbe (
+    stavka_id SERIAL PRIMARY KEY,
+    narudzba_id INT NOT NULL REFERENCES narudzba(narudzba_id),
+    ulaznica_id INT NOT NULL REFERENCES ulaznica(ulaznica_id),
+    kolicina INT NOT NULL,
+    cijena_po_komadu NUMERIC(10,2) NOT NULL
+);
