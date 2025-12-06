@@ -136,3 +136,10 @@ CHECK (year_of_birth <= EXTRACT(YEAR FROM CURRENT_DATE) - 18);
 ALTER TABLE mentor
 ADD CONSTRAINT mentor_experience_chk
 CHECK (years_of_experience >= 2);
+
+ALTER TABLE staff
+ADD CONSTRAINT security_age_check
+CHECK (
+    staff_role <> 'security'
+    OR AGE(date_of_birth) >= INTERVAL '21 years'
+);
