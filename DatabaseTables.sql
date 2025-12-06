@@ -163,3 +163,40 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER trg_check_performance
 BEFORE INSERT OR UPDATE ON performance
 FOR EACH ROW EXECUTE FUNCTION check_performance_overlap();
+
+
+CREATE OR REPLACE FUNCTION check_and_create_membership()
+RETURNS TRIGGER AS $$
+DECLARE
+    festival_count INT;
+    total_spent NUMERIC(10,2);
+BEGIN
+    
+    SELECT COUNT(DISTINCT festival_id) INTO festival_count
+    FROM visitor_order
+    WHERE visitor_id = NEW.visitor_id;
+
+   
+    SELECT SUM(total_amount) INTO total_spent
+    FROM visitor_order
+    WHERE visitor_id = NEW.visitor_id;
+
+    
+    IF festival_count > 3 AND total_spent > 600 THEN
+       
+        IF NOT EXISTS (
+            SELECT 1 FROM membership_card WHERE visitor_id = NEW.visitor_id
+        ) THEN
+            INSERT INTO membership_card(visitor_id, activation_date, card_status)
+            VALUES (NEW.visitor_id, NOW(), 'active');
+        END IF;
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_membership_after_order
+AFTER INSERT ON visitor_order
+FOR EACH ROW
+EXECUTE FUNCTION check_and_create_membership();
