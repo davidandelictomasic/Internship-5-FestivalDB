@@ -128,3 +128,11 @@ USING difficulty_level::difficulty_level_t;
 ALTER TABLE workshop_registration
 ALTER COLUMN registration_status TYPE registration_status_t
 USING registration_status::registration_status_t;
+
+ALTER TABLE mentor
+ADD CONSTRAINT mentor_age_chk
+CHECK (year_of_birth <= EXTRACT(YEAR FROM CURRENT_DATE) - 18);
+
+ALTER TABLE mentor
+ADD CONSTRAINT mentor_experience_chk
+CHECK (years_of_experience >= 2);
