@@ -105,3 +105,10 @@ CREATE TABLE membership_card (
     activation_date DATE NOT NULL,
     card_status VARCHAR(20) NOT NULL
 );
+CREATE TYPE festival_status_t AS ENUM ('planned','active','finished');
+
+CREATE TYPE ticket_validity_t AS ENUM ('day','whole_festival');
+
+CREATE TYPE difficulty_level_t AS ENUM ('beginner','intermediate','advanced');
+
+CREATE TYPE registration_status_t AS ENUM ('registered','cancelled','attended');
