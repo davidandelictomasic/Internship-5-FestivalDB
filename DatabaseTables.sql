@@ -1,107 +1,107 @@
 
 CREATE TABLE festival (
     festival_id SERIAL PRIMARY KEY,
-    naziv VARCHAR(100) NOT NULL,
-    grad VARCHAR(100) NOT NULL,
-    kapacitet_posjetitelja INT NOT NULL,
-    datum_pocetka DATE NOT NULL,
-    datum_zavrsetka DATE NOT NULL,
-    status VARCHAR(20) NOT NULL,
-    ima_kamp BOOLEAN DEFAULT FALSE
+    festival_name VARCHAR(100) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    capacity INT NOT NULL,
+    f_start_date DATE NOT NULL,
+    f_end_date DATE NOT NULL,
+    festival_status VARCHAR(20) NOT NULL,
+    has_camp BOOLEAN DEFAULT FALSE
 );
-CREATE TABLE pozornica (
-    pozornica_id SERIAL PRIMARY KEY,
+CREATE TABLE stage (
+    stage_id SERIAL PRIMARY KEY,
     festival_id INT NOT NULL REFERENCES festival(festival_id),
-    naziv VARCHAR(100) NOT NULL,
-    lokacija_unutar_festivala VARCHAR(50),
-    max_kapacitet INT NOT NULL,
-    natkrivena BOOLEAN DEFAULT FALSE
+    stage_name VARCHAR(100) NOT NULL,
+    location_within_festival VARCHAR(50),
+    max_capacity INT NOT NULL,
+    covered BOOLEAN DEFAULT FALSE
 );
-CREATE TABLE izvodjac (
-    izvodjac_id SERIAL PRIMARY KEY,
-    naziv VARCHAR(100) NOT NULL,
-    drzava VARCHAR(100),
-    zanr VARCHAR(50),
-    broj_clanova INT,
-    aktivan BOOLEAN DEFAULT TRUE
+CREATE TABLE performer (
+    performer_id SERIAL PRIMARY KEY,
+    performer_name VARCHAR(100) NOT NULL,
+    country VARCHAR(100),
+    genre VARCHAR(50),
+    number_of_members INT,
+    active BOOLEAN DEFAULT TRUE
 );
-CREATE TABLE nastup (
-    nastup_id SERIAL PRIMARY KEY,
+CREATE TABLE performance (
+    performance_id SERIAL PRIMARY KEY,
     festival_id INT NOT NULL REFERENCES festival(festival_id),
-    pozornica_id INT NOT NULL REFERENCES pozornica(pozornica_id),
-    izvodjac_id INT NOT NULL REFERENCES izvodjac(izvodjac_id),
-    vrijeme_pocetka TIMESTAMP NOT NULL,
-    vrijeme_zavrsetka TIMESTAMP NOT NULL,
-    ocekivani_broj_posjetitelja INT
+    stage_id INT NOT NULL REFERENCES stage(stage_id),
+    performer_id INT NOT NULL REFERENCES performer(performer_id),
+    start_time TIMESTAMP NOT NULL,
+    end_time TIMESTAMP NOT NULL,
+    expected_number_of_attendees INT
 );
-CREATE TABLE posjetitelj (
-    posjetitelj_id SERIAL PRIMARY KEY,
-    ime VARCHAR(100) NOT NULL,
-    prezime VARCHAR(100) NOT NULL,
-    datum_rodenja DATE NOT NULL,
-    grad VARCHAR(100),
+CREATE TABLE visitor (
+    visitor_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    city VARCHAR(100),
     email VARCHAR(150),
-    drzava VARCHAR(100)
+    country VARCHAR(100)
 );
-CREATE TABLE ulaznica (
-    ulaznica_id SERIAL PRIMARY KEY,
-    tip VARCHAR(50) NOT NULL,
-    cijena NUMERIC(10,2) NOT NULL,
-    opis TEXT,
-    vrijedi_za VARCHAR(50)
+CREATE TABLE ticket (
+    ticket_id SERIAL PRIMARY KEY,
+    ticket_type VARCHAR(50) NOT NULL,
+    price NUMERIC(10,2) NOT NULL,
+    ticket_description TEXT,
+    valid_for VARCHAR(50)
 );
-CREATE TABLE narudzba (
-    narudzba_id SERIAL PRIMARY KEY,
-    posjetitelj_id INT NOT NULL REFERENCES posjetitelj(posjetitelj_id),
+CREATE TABLE visitor_order (
+    order_id SERIAL PRIMARY KEY,
+    visitor_id INT NOT NULL REFERENCES visitor(visitor_id),
     festival_id INT NOT NULL REFERENCES festival(festival_id),
-    datum_vrijeme_kupnje TIMESTAMP NOT NULL,
-    ukupan_iznos NUMERIC(10,2) NOT NULL
+    purchase_datetime TIMESTAMP NOT NULL,
+    total_amount NUMERIC(10,2) NOT NULL
 );
-CREATE TABLE stavka_narudzbe (
-    stavka_id SERIAL PRIMARY KEY,
-    narudzba_id INT NOT NULL REFERENCES narudzba(narudzba_id),
-    ulaznica_id INT NOT NULL REFERENCES ulaznica(ulaznica_id),
-    kolicina INT NOT NULL,
-    cijena_po_komadu NUMERIC(10,2) NOT NULL
+CREATE TABLE order_item (
+    order_item_id SERIAL PRIMARY KEY,
+    order_id INT NOT NULL REFERENCES visitor_order(order_id),
+    ticket_id INT NOT NULL REFERENCES ticket(ticket_id),
+    quantity INT NOT NULL,
+    price_per_unit NUMERIC(10,2) NOT NULL
 );
 CREATE TABLE mentor (
     mentor_id SERIAL PRIMARY KEY,
-    ime VARCHAR(100) NOT NULL,
-    prezime VARCHAR(100) NOT NULL,
-    godina_rodenja INT NOT NULL,
-    podrucje_strucnosti VARCHAR(100),
-    godine_iskustva INT NOT NULL
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    year_of_birth INT NOT NULL,
+    area_of_expertise VARCHAR(100),
+    years_of_experience INT NOT NULL
 );
-CREATE TABLE radionica (
-    radionica_id SERIAL PRIMARY KEY,
+CREATE TABLE workshop (
+    workshop_id SERIAL PRIMARY KEY,
     festival_id INT NOT NULL REFERENCES festival(festival_id),
     mentor_id INT NOT NULL REFERENCES mentor(mentor_id),
-    naziv VARCHAR(100) NOT NULL,
-    razina_tezine VARCHAR(20) NOT NULL,
-    max_polaznika INT NOT NULL,
-    trajanje_sati INT NOT NULL,
-    zahtijeva_prethodno_znanje BOOLEAN DEFAULT FALSE
+    workshopname VARCHAR(100) NOT NULL,
+    difficulty_level VARCHAR(20) NOT NULL,
+    max_participants INT NOT NULL,
+    duration_hours INT NOT NULL,
+    requires_prior_knowledge BOOLEAN DEFAULT FALSE
 );
-CREATE TABLE prijava_radionica (
-    prijava_id SERIAL PRIMARY KEY,
-    radionica_id INT NOT NULL REFERENCES radionica(radionica_id),
-    posjetitelj_id INT NOT NULL REFERENCES posjetitelj(posjetitelj_id),
-    status VARCHAR(20) NOT NULL,
-    vrijeme_prijave TIMESTAMP NOT NULL
+CREATE TABLE workshop_registration (
+    registration_id SERIAL PRIMARY KEY,
+    workshop_id INT NOT NULL REFERENCES workshop(workshop_id),
+    visitor_id INT NOT NULL REFERENCES visitor(visitor_id),
+    registration_status VARCHAR(20) NOT NULL,
+    registration_time TIMESTAMP NOT NULL
 );
-CREATE TABLE osoblje (
-    osoblje_id SERIAL PRIMARY KEY,
+CREATE TABLE staff (
+    staff_id SERIAL PRIMARY KEY,
     festival_id INT NOT NULL REFERENCES festival(festival_id),
-    ime VARCHAR(100) NOT NULL,
-    prezime VARCHAR(100) NOT NULL,
-    datum_rodenja DATE NOT NULL,
-    uloga VARCHAR(50) NOT NULL,
-    kontakt VARCHAR(150),
-    ima_sigurnosnu_obuku BOOLEAN DEFAULT FALSE
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    staff_role VARCHAR(50) NOT NULL,
+    contact VARCHAR(150),
+    has_security_training BOOLEAN DEFAULT FALSE
 );
-CREATE TABLE membership_kartica (
+CREATE TABLE membership_card (
     membership_id SERIAL PRIMARY KEY,
-    posjetitelj_id INT NOT NULL REFERENCES posjetitelj(posjetitelj_id),
-    datum_aktivacije DATE NOT NULL,
-    status VARCHAR(20) NOT NULL
+    visitor_id INT NOT NULL REFERENCES visitor(visitor_id),
+    activation_date DATE NOT NULL,
+    card_status VARCHAR(20) NOT NULL
 );
