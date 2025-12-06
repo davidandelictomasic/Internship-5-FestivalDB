@@ -143,3 +143,23 @@ CHECK (
     staff_role <> 'security'
     OR AGE(date_of_birth) >= INTERVAL '21 years'
 );
+
+CREATE FUNCTION check_performance_overlap()
+RETURNS TRIGGER AS $$
+BEGIN
+	IF EXISTS(
+		SELECT 1
+		FROM performance
+		WHERE stage_id = NEW.stage_id
+		AND NEW.start_time < end_time AND NEW.end_time > start_time
+	)
+	THEN
+	RAISE EXCEPTION 'Performance time overlapping';
+	END IF;
+	RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_check_performance
+BEFORE INSERT OR UPDATE ON performance
+FOR EACH ROW EXECUTE FUNCTION check_performance_overlap();
