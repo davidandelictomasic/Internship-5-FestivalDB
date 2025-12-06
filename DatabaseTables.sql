@@ -112,3 +112,19 @@ CREATE TYPE ticket_validity_t AS ENUM ('day','whole_festival');
 CREATE TYPE difficulty_level_t AS ENUM ('beginner','intermediate','advanced');
 
 CREATE TYPE registration_status_t AS ENUM ('registered','cancelled','attended');
+
+ALTER TABLE festival
+ALTER COLUMN festival_status TYPE festival_status_t
+USING festival_status::festival_status_t;
+
+ALTER TABLE ticket
+ALTER COLUMN valid_for TYPE ticket_validity_t
+USING valid_for::ticket_validity_t;
+
+ALTER TABLE workshop
+ALTER COLUMN difficulty_level TYPE difficulty_level_t
+USING difficulty_level::difficulty_level_t;
+
+ALTER TABLE workshop_registration
+ALTER COLUMN registration_status TYPE registration_status_t
+USING registration_status::registration_status_t;
