@@ -4011,7 +4011,7 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Carolin', 'Mutton', '1996/07/06', 'Taman', 'cmuttona@elpais.com', 'Indonesia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Brooke', 'Gowers', '2015/01/23', 'Ambato Boeny', 'bgowersb@baidu.com', 'Madagascar');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Eadie', 'Streeton', '2002/12/16', 'Purral', 'estreetonc@360.cn', 'Costa Rica');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Meredith', 'Niessen', '2014/03/13', 'São Tomé', 'mniessend@parallels.com', 'Portugal');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Meredith', 'Niessen', '2014/03/13', 'São Tomé', 'mniessend@gmail.com', 'Portugal');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Rice', 'Rose', '1993/11/03', 'Stamboliyski', 'rrosee@wufoo.com', 'Bulgaria');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Had', 'Rappoport', '2014/04/03', 'Jacareí', 'hrappoportf@guardian.co.uk', 'Brazil');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Garth', 'Besantie', '1997/08/15', 'Tororo', 'gbesantieg@uiuc.edu', 'Uganda');
@@ -4020,7 +4020,7 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Inge', 'Damato', '1999/12/04', 'Daogao', 'idamatoj@npr.org', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Klement', 'Turneaux', '1989/07/22', 'Manoc-Manoc', 'kturneauxk@drupal.org', 'Philippines');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Lila', 'Dymott', '2002/05/15', 'Barcelona', 'ldymottl@typepad.com', 'Spain');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Claybourne', 'Sheehy', '1989/08/24', 'Darpas', 'csheehym@mac.com', 'Armenia');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Claybourne', 'Sheehy', '1989/08/24', 'Split', 'csheehym@mac.com', 'Armenia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Fawn', 'Whyberd', '1991/03/20', 'Pasirpengarayan', 'fwhyberdn@usgs.gov', 'Indonesia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Kellen', 'Banford', '1991/09/19', 'Réo', 'kbanfordo@ehow.com', 'Burkina Faso');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Gideon', 'Ivanyukov', '2004/07/11', 'Molochnoye', 'givanyukovp@dell.com', 'Russia');
@@ -4034,10 +4034,10 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Pennie', 'Jiggle', '2006/12/22', 'Oslo', 'pjigglex@mac.com', 'Norway');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Marcella', 'Gripton', '1993/05/23', 'Sumbawa Besar', 'mgriptony@hostgator.com', 'Indonesia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Faith', 'Jellico', '2002/03/05', 'Levski', 'fjellicoz@edublogs.org', 'Bulgaria');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Joey', 'Nuscha', '1990/07/31', 'Grenoble', 'jnuscha10@twitpic.com', 'France');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Joey', 'Nuscha', '1990/07/31', 'Split', 'jnuscha10@twitpic.com', 'France');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Hamilton', 'Alfonso', '2003/10/06', 'Ouranoupolis', 'halfonso11@nationalgeographic.com', 'Greece');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Daisy', 'Redgrave', '2001/11/30', 'Torre', 'dredgrave12@github.com', 'Portugal');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Martin', 'Tempest', '1993/09/17', 'Murindó', 'mtempest13@cbsnews.com', 'Colombia');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Martin', 'Tempest', '1993/09/17', 'Murindó', 'mtempest13@gmail.com', 'Colombia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Claiborn', 'Jorat', '2010/01/05', 'Sri Jayewardenepura Kotte', 'cjorat14@dion.ne.jp', 'Sri Lanka');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Novelia', 'Penticoot', '2002/06/05', 'Nacka', 'npenticoot15@ehow.com', 'Sweden');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Rosalind', 'Kernermann', '1988/07/22', 'Laifang', 'rkernermann16@gov.uk', 'China');
@@ -4050,14 +4050,14 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Hamnet', 'Beetlestone', '2010/03/24', 'Araguaiana', 'hbeetlestone1d@opensource.org', 'Brazil');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Arther', 'Willimott', '1986/07/30', 'Ḩukūmat-e Shīnkaī', 'awillimott1e@acquirethisname.com', 'Afghanistan');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Annice', 'Stooders', '2002/08/03', 'Miringa', 'astooders1f@ow.ly', 'Nigeria');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Garry', 'Minton', '2008/09/29', 'Omišalj', 'gminton1g@multiply.com', 'Croatia');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Garry', 'Minton', '2008/09/29', 'Omišalj', 'gminton1g@gmail.com', 'Croatia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Ira', 'Rhubottom', '2002/12/22', 'Guanagazapa', 'irhubottom1h@plala.or.jp', 'Guatemala');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Sibylla', 'Gallant', '1994/02/28', 'Mazra‘at Bayt Jinn', 'sgallant1i@scientificamerican.com', 'Syria');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Sabine', 'Suffield', '2004/02/26', 'Paratinga', 'ssuffield1j@networksolutions.com', 'Brazil');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Marlyn', 'Kuhnel', '2011/07/15', 'La Mesa', 'mkuhnel1k@cnn.com', 'Panama');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Zollie', 'Macveigh', '1986/06/08', 'Strasbourg', 'zmacveigh1l@oaic.gov.au', 'France');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Emmy', 'Caudrey', '2015/06/24', 'Santander de Quilichao', 'ecaudrey1m@amazon.de', 'Colombia');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Janie', 'Dummigan', '2009/06/02', 'Jiegan', 'jdummigan1n@epa.gov', 'China');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Janie', 'Dummigan', '2009/06/02', 'Split', 'jdummigan1n@epa.gov', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Scott', 'McDonnell', '2001/02/02', 'Machang', 'smcdonnell1o@woothemes.com', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Jacinta', 'Berkelay', '2009/03/19', 'Gandi', 'jberkelay1p@myspace.com', 'Nigeria');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Janka', 'Sizeland', '2004/09/24', 'Malko Tŭrnovo', 'jsizeland1q@ibm.com', 'Bulgaria');
@@ -4068,10 +4068,10 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Krissy', 'Burlay', '2013/12/04', 'Amieira do Tejo', 'kburlay1v@dyndns.org', 'Portugal');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Dani', 'Breed', '1995/06/21', 'Qujiang', 'dbreed1w@is.gd', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('James', 'Larkworthy', '1994/08/07', 'Tapes', 'jlarkworthy1x@1688.com', 'Brazil');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Sandor', 'Gynne', '2003/06/20', 'Leon Postigo', 'sgynne1y@prnewswire.com', 'Philippines');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Sandor', 'Gynne', '2003/06/20', 'Leon Postigo', 'sgynne1y@gmail.com', 'Philippines');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Layton', 'Perrin', '1996/11/29', 'Tsybulevka', 'lperrin1z@xrea.com', 'Ukraine');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Ambrosi', 'Heynen', '1999/05/15', 'Lanling', 'aheynen20@cam.ac.uk', 'China');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Denna', 'Castri', '1996/10/08', 'Ciudad Bolívar', 'dcastri21@un.org', 'Venezuela');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Denna', 'Castri', '1996/10/08', 'Split', 'dcastri21@un.org', 'Venezuela');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Philbert', 'Allward', '2000/05/02', 'Chhāgalnāiya', 'pallward22@smh.com.au', 'Bangladesh');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Elsey', 'Dearnly', '2012/10/09', 'Xuji', 'edearnly23@drupal.org', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Jephthah', 'Sneesby', '2012/03/07', 'Huaqiao', 'jsneesby24@usda.gov', 'China');
@@ -4086,11 +4086,11 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Nolana', 'Reeds', '1996/06/13', 'Jintan', 'nreeds2d@ed.gov', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('West', 'Vawton', '2010/03/19', 'Log pri Brezovici', 'wvawton2e@fastcompany.com', 'Slovenia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Ellyn', 'Zanettini', '2012/10/21', 'Al Majd', 'ezanettini2f@usa.gov', 'Palestinian Territory');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Buddy', 'Staker', '2011/01/14', 'Yanghe', 'bstaker2g@harvard.edu', 'China');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Buddy', 'Staker', '2011/01/14', 'Split', 'bstaker2g@harvard.edu', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Elisha', 'Haitlie', '1997/12/15', 'Cikiwul Satu', 'ehaitlie2h@jalbum.net', 'Indonesia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Pearce', 'Penney', '1990/06/30', 'Fatubia', 'ppenney2i@earthlink.net', 'Indonesia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Arabelle', 'Adie', '1995/04/21', 'Negreiros', 'aadie2j@jigsy.com', 'Portugal');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Violante', 'Roach', '1992/02/01', 'Nikulino', 'vroach2k@berkeley.edu', 'Russia');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Violante', 'Roach', '1992/02/01', 'Nikulino', 'vroach2k@gmail.com', 'Russia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Trace', 'Fawltey', '1986/01/22', 'Kramarzówka', 'tfawltey2l@oaic.gov.au', 'Poland');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Matthieu', 'Gunningham', '2006/03/17', 'Murmansk', 'mgunningham2m@ucoz.ru', 'Russia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Evelina', 'Swalteridge', '2001/11/06', 'Sindon', 'eswalteridge2n@imgur.com', 'Philippines');
@@ -4100,7 +4100,7 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Marysa', 'Sturgess', '2013/07/20', 'Mílos', 'msturgess2r@imdb.com', 'Greece');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Eloise', 'Lingley', '1998/09/24', 'Nagornyy', 'elingley2s@slate.com', 'Russia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Tallie', 'Mixon', '1990/03/30', 'Vathýlakkos', 'tmixon2t@economist.com', 'Greece');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Drucy', 'Cosh', '2011/02/18', 'Guadalupe', 'dcosh2u@scientificamerican.com', 'Mexico');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Drucy', 'Cosh', '2011/02/18', 'Split', 'dcosh2u@scientificamerican.com', 'Mexico');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Alyson', 'Chester', '2006/12/15', 'Masku', 'achester2v@bloomberg.com', 'Finland');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Carlos', 'Root', '1992/05/28', 'Dongxi', 'croot2w@bloglovin.com', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Daffi', 'Comazzo', '2001/11/27', 'Oslo', 'dcomazzo2x@nymag.com', 'Norway');
@@ -4110,7 +4110,7 @@ insert into visitor (first_name, last_name, date_of_birth, city, email, country)
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Barnabe', 'Cardis', '1994/04/06', 'Balzar', 'bcardis31@umich.edu', 'Ecuador');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Dene', 'Bellwood', '2015/10/12', 'Aţ Ţafīlah', 'dbellwood32@mozilla.org', 'Jordan');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Tanner', 'Pigot', '1993/05/01', 'Tosu', 'tpigot33@eepurl.com', 'Japan');
-insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Deeann', 'Vondrach', '2001/12/25', 'Guishan', 'dvondrach34@sbwire.com', 'China');
+insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Deeann', 'Vondrach', '2001/12/25', 'Split', 'dvondrach34@sbwire.com', 'China');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Fernanda', 'Camm', '2004/02/16', 'Terang', 'fcamm35@e-recht24.de', 'Indonesia');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Isaak', 'Plain', '2004/06/13', 'Si Somdet', 'iplain36@youku.com', 'Thailand');
 insert into visitor (first_name, last_name, date_of_birth, city, email, country) values ('Cosetta', 'Durbin', '2015/02/12', 'Sere', 'cdurbin37@lulu.com', 'Indonesia');
@@ -5007,7 +5007,7 @@ insert into ticket (ticket_type, price, ticket_description, valid_for) values ('
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 97.96, 'aenean lectus pellentesque', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 70.09, 'maecenas tincidunt lacus', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 2.21, 'at nunc commodo placerat', 'day');
-insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 76.21, 'faucibus orci luctus et ultrices', 'whole_festival');
+insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 176.21, 'faucibus orci luctus et ultrices', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 3.94, 'et ultrices posuere', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 3.24, 'volutpat in congue etiam justo', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 53.43, 'sem praesent id massa id', 'whole_festival');
@@ -5019,7 +5019,7 @@ insert into ticket (ticket_type, price, ticket_description, valid_for) values ('
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 88.51, 'pellentesque eget nunc donec quis', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 13.39, 'morbi a ipsum integer', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 80.63, 'sem duis aliquam convallis nunc', 'day');
-insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 46.63, 'praesent blandit lacinia erat vestibulum', 'whole_festival');
+insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 146.63, 'praesent blandit lacinia erat vestibulum', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 6.82, 'fusce consequat nulla', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 3.16, 'penatibus et magnis dis', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 74.32, 'tristique fusce congue', 'day');
@@ -5038,7 +5038,7 @@ insert into ticket (ticket_type, price, ticket_description, valid_for) values ('
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 39.72, 'sollicitudin ut suscipit a', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 45.28, 'donec posuere metus vitae ipsum', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 62.72, 'luctus nec molestie sed', 'day');
-insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 82.96, 'nulla suscipit ligula in', 'day');
+insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 182.96, 'nulla suscipit ligula in', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 91.47, 'tellus nisi eu', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 30.21, 'nulla sed accumsan felis', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 52.11, 'augue quam sollicitudin vitae consectetuer', 'whole_festival');
@@ -5048,7 +5048,7 @@ insert into ticket (ticket_type, price, ticket_description, valid_for) values ('
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 68.82, 'quisque ut erat curabitur', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 78.15, 'malesuada in imperdiet et', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 29.91, 'interdum in ante', 'whole_festival');
-insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 57.89, 'suspendisse potenti cras in', 'day');
+insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 157.89, 'suspendisse potenti cras in', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 34.5, 'in faucibus orci luctus', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 23.07, 'luctus nec molestie', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 11.76, 'condimentum id luctus nec molestie', 'whole_festival');
@@ -5060,7 +5060,7 @@ insert into ticket (ticket_type, price, ticket_description, valid_for) values ('
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 47.68, 'enim sit amet', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 86.85, 'consequat lectus in', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 8.27, 'euismod scelerisque quam turpis adipiscing', 'day');
-insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 69.26, 'maecenas leo odio condimentum id', 'day');
+insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 169.26, 'maecenas leo odio condimentum id', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 97.24, 'quam nec dui luctus rutrum', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 10.55, 'sit amet eros suspendisse', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 34.32, 'erat curabitur gravida', 'whole_festival');
@@ -5071,7 +5071,7 @@ insert into ticket (ticket_type, price, ticket_description, valid_for) values ('
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 6.32, 'leo rhoncus sed vestibulum', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('standard', 68.49, 'quisque erat eros', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('premium', 58.05, 'lacus at turpis donec posuere', 'day');
-insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 99.33, 'blandit nam nulla integer', 'day');
+insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 199.33, 'blandit nam nulla integer', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 54.85, 'pharetra magna ac consequat metus', 'whole_festival');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 14.88, 'augue luctus tincidunt', 'day');
 insert into ticket (ticket_type, price, ticket_description, valid_for) values ('VIP', 4.75, 'aenean sit amet', 'day');
